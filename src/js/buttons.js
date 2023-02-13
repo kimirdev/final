@@ -14,7 +14,12 @@ button.addEventListener("click", toggleMenu);
 
 menuClose.addEventListener("click", toggleMenu);
 
-blur.addEventListener("click", toggleMenu);
+function removeMenu() {
+  menuBurger.classList.add("burger-hide");
+  menuBurger.classList.remove("burger-in-place");
+  blur.classList.add("display-none");
+}
+blur.addEventListener("click", removeMenu);
 
 let readMore = document.querySelector(".read-more");
 let info = document.querySelector(".info-2");

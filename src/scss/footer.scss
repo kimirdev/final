@@ -13,7 +13,7 @@
       justify-content: space-evenly;
   
   
-      .p1 {
+      &__copy {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -21,11 +21,11 @@
         width: 350px;
       }
   
-      .p2 {
+      &__policy {
         width:400px;
       }
   
-      .p3 {
+      &__info {
         width: 350px;
         text-align: right;
       }
@@ -50,7 +50,7 @@
       margin: 0 0 10px 0;
     }
   
-    .p2 a {
+    &__policy a {
       display: block;
       font-family: "TT Lakes",sans-serif;
       font-size: 14px;
@@ -66,10 +66,8 @@
       }
     }
   
-    .p1 p:nth-child(1) {
+    &__copy p:nth-child(1) {
       margin-bottom:0;
-    }
-  
-  
-  }
+    }  
+}
   

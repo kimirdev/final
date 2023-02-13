@@ -12,168 +12,161 @@
     height: 100%;
     background-color: white;
   
-  
-  
-  
-  
     @media (min-width:768px) {
-      border-left: 1px solid #D9FFF5;
-      box-shadow: 5px 0 60px -10px rgba(0, 0, 0, 0.5);
-      width:320px;
+        border-left: 1px solid #D9FFF5;
+        box-shadow: 5px 0 60px -10px rgba(0, 0, 0, 0.5);
+        width:320px;
   
     }
   
     @media (min-width:1440px) {
-      border-left: 1px solid #D9FFF5;
-      box-shadow: 5px 0 60px -10px rgba(0, 0, 0, 0.5);
-      width:440px;
+        border-left: 1px solid #D9FFF5;
+        box-shadow: 5px 0 60px -10px rgba(0, 0, 0, 0.5);
+        width:440px;
     }
   
-  
     .header-modal {
-      width: 320px;
-      background-color: white;
-      box-sizing: border-box;
+        width: 320px;
+        background-color: white;
+        box-sizing: border-box;
     }
   
     .feedback {
-      box-sizing: border-box;
-      margin: 40px 0 0 20px;
-      font-family: "TT Lakes", sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      font-style: normal;
+        box-sizing: border-box;
+        margin: 40px 0 0 20px;
+        font-family: "TT Lakes", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
     }
   
     .feedback::after {
-      position: absolute;
-      content: '';
-      width: 3px;
-      height: 40px;
-      background-color: #41F6D7;
-      border-radius: 0 5px 5px 0;
-      left: 0;
-      top: 100px;
-  
-      @media (min-width: 1440px) {
-        top:35px;
-      }
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 40px;
+        background-color: #41F6D7;
+        border-radius: 0 5px 5px 0;
+        left: 0;
+        top: 100px;
+    
+        @media (min-width: 1440px) {
+            top:35px;
+        }
     }
   
     .close {
-      margin-top: 24px;
-      margin-left: 16px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: url("../img/close.svg") no-repeat;
-      border: none;
-  
-      &:hover {
+        margin-top: 24px;
+        margin-left: 16px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: url("../img/close.svg") no-repeat;
+        border: none;
+
+        &:hover {
         cursor: pointer;
         transition-duration:0.6s;
         transform: scale(1.05);
-      }
-  
-      @media (min-width: 1440px) {
+        }
+
+        @media (min-width: 1440px) {
         position: absolute;
         top:10px;
         right:360px;
-      }
-    }
-  
-  form {
-    background-color: white;
-  
-  
-    ul {
-      list-style: none;
-      padding: 16px 16px 0 16px;
-      background-color: white;
-  
-      label {
-        display: none;
-      }
-  
-      input {
-        display: block;
-        width:100%;
-        height:48px;
-        border-radius: 5px;
-        border:1px solid $aColor;
-        padding-left: 16px;
-        font-family: "TT Lakes",sans-serif;
-        font-size: 16px;
-        color:$aColor;
-      }
-  
-      textarea {
-        padding: 16px 0 0 16px;
-        width:100%;
-        min-height:118px;
-        font-family: "TT Lakes",sans-serif;
-        font-size: 16px;
-        color:$aColor;
-        border-radius: 5px;
-        border:1px solid $aColor;
-      }
-  
-      li {
-        margin-top: 16px;
-      }
-    }
-  }
-  .modal-1-footer {
-    background-color: white;
-    height: 20px;
-    flex:0 1 auto;
-  
-    p {
-      background-color: white;
-      margin: 0 16px 0 20px;
-      font-family: "TT Lakes",sans-serif;
-      font-size: 14px;
-      color:$aColor;
-  
-      a {
-        color:$red;
-        cursor:pointer;
-        display: block;
-  
-        &:hover {
-          transform: scale(101%);
-          transition-duration: 0.1ms;
         }
-      }
     }
   
-    .btn-send {
-      width: 136px;
-      height:32px;
-      background: url("../img/send.svg") no-repeat;
-      border: none;
-      margin: 10px 10px 0 170px;
-      cursor: pointer;
-      border-radius: 30px;
-  
-      &:hover {
-        cursor: pointer;
-        transition-duration:0.6s;
-        box-shadow: 0 0 0.75rem $crimson;
-      }
-  
-      @media (min-width: 1440px) {
-        margin: 10px 10px 0 270px;
-      }
-  
-      @media (min-width: 320px) {
-        position: absolute;
-        margin-right: 0;
-        right:20px;
-      }
+    form {
+        background-color: white;
+        ul {
+            list-style: none;
+            padding: 16px 16px 0 16px;
+            background-color: white;
+
+            label {
+                display: none;
+            }
+
+            input {
+                display: block;
+                width:100%;
+                height:48px;
+                border-radius: 5px;
+                border:1px solid $aColor;
+                padding-left: 16px;
+                font-family: "TT Lakes",sans-serif;
+                font-size: 16px;
+                color:$aColor;
+            }
+
+            textarea {
+                padding: 16px 0 0 16px;
+                width:100%;
+                min-height:118px;
+                font-family: "TT Lakes",sans-serif;
+                font-size: 16px;
+                color:$aColor;
+                border-radius: 5px;
+                border:1px solid $aColor;
+            }
+
+            li {
+                margin-top: 16px;
+            }
+        }
     }
-  
-  }
+
+    .modal-1-footer {
+        background-color: white;
+        height: 20px;
+        flex:0 1 auto;
+    
+        p {
+            background-color: white;
+            margin: 0 16px 0 20px;
+            font-family: "TT Lakes",sans-serif;
+            font-size: 14px;
+            color:$aColor;
+        
+            a {
+                color:$red;
+                cursor:pointer;
+                display: block;
+        
+                &:hover {
+                transform: scale(101%);
+                transition-duration: 0.1ms;
+                }
+            }
+        }
+    
+        .btn-send {
+            width: 136px;
+            height:32px;
+            background: url("../img/send.svg") no-repeat;
+            border: none;
+            margin: 10px 10px 0 170px;
+            cursor: pointer;
+            border-radius: 30px;
+        
+            &:hover {
+                cursor: pointer;
+                transition-duration:0.6s;
+                box-shadow: 0 0 0.75rem $crimson;
+            }
+        
+            @media (min-width: 1440px) {
+                margin: 10px 10px 0 270px;
+            }
+        
+            @media (min-width: 320px) {
+                position: absolute;
+                margin-right: 0;
+                right:20px;
+            }
+        }
+    }
 }
 
 .modal-2 {
@@ -191,159 +184,168 @@
     background-color: white;
   
     @media (min-width:768px) {
-      border-left: 1px solid #D9FFF5;
-      box-shadow: 5px 0 60px -10px rgba(0, 0, 0, 0.5);
-      width:320px;
+        border-left: 1px solid #D9FFF5;
+        box-shadow: 5px 0 60px -10px rgba(0, 0, 0, 0.5);
+        width:320px;
     }
   
     @media (min-width:1440px) {
-      border-left: 1px solid #D9FFF5;
-      box-shadow: 5px 0 60px -10px rgba(0, 0, 0, 0.5);
-      width:440px;
+        border-left: 1px solid #D9FFF5;
+        box-shadow: 5px 0 60px -10px rgba(0, 0, 0, 0.5);
+        width:440px;
     }
   
   
     .header-modal {
-      width: 320px;
-      background-color: white;
-      box-sizing: border-box;
+        width: 320px;
+        background-color: white;
+        box-sizing: border-box;
     }
   
     .feedback {
-      box-sizing: border-box;
-      margin: 40px 0 0 20px;
-      font-family: "TT Lakes", sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      font-style: normal;
+        box-sizing: border-box;
+        margin: 40px 0 0 20px;
+        font-family: "TT Lakes", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
     }
   
     .feedback::after {
-      position: absolute;
-      content: '';
-      width: 3px;
-      height: 40px;
-      background-color: #41F6D7;
-      border-radius: 0 5px 5px 0;
-      left: 0;
-      top: 100px;
-  
-      @media (min-width: 1440px) {
-        top:35px;
-      }
+        position: absolute;
+        content: '';
+        width: 3px;
+        height: 40px;
+        background-color: #41F6D7;
+        border-radius: 0 5px 5px 0;
+        left: 0;
+        top: 100px;
+    
+        @media (min-width: 1440px) {
+            top:35px;
+        }
     }
   
     .close-2 {
-      margin-top: 24px;
-      margin-left: 16px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: url("../img/close.svg") no-repeat;
-      border: none;
-  
-      &:hover {
-        cursor: pointer;
-        transition-duration:0.6s;
-        transform: scale(1.05);
-      }
-  
-      @media (min-width: 1440px) {
-        position: absolute;
-        top:10px;
-        right:360px;
-      }
+        margin-top: 24px;
+        margin-left: 16px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: url("../img/close.svg") no-repeat;
+        border: none;
+    
+        &:hover {
+            cursor: pointer;
+            transition-duration:0.6s;
+            transform: scale(1.05);
+        }
+    
+        @media (min-width: 1440px) {
+            position: absolute;
+            top:10px;
+            right:360px;
+        }
     }
   
     form {
-  
-      ul {
-        list-style: none;
-        padding: 16px 16px 0 16px;
-  
-        label {
-          display: none;
+        ul {
+            list-style: none;
+            padding: 16px 16px 0 16px;
+    
+            label {
+            display: none;
+            }
+    
+            input {
+            display: block;
+            width:100%;
+            height:48px;
+            border-radius: 5px;
+            border:1px solid $aColor;
+            padding-left: 16px;
+            font-family: "TT Lakes",sans-serif;
+            font-size: 16px;
+            color:$aColor;
+            }
+    
+            textarea {
+            padding: 16px 0 0 16px;
+            width:100%;
+            min-height:118px;
+            font-family: "TT Lakes",sans-serif;
+            font-size: 16px;
+            color:$aColor;
+            border-radius: 5px;
+            border:1px solid $aColor;
+            }
+    
+            li {
+            margin-top: 16px;
+            }
         }
-  
-        input {
-          display: block;
-          width:100%;
-          height:48px;
-          border-radius: 5px;
-          border:1px solid $aColor;
-          padding-left: 16px;
-          font-family: "TT Lakes",sans-serif;
-          font-size: 16px;
-          color:$aColor;
-        }
-  
-        textarea {
-          padding: 16px 0 0 16px;
-          width:100%;
-          min-height:118px;
-          font-family: "TT Lakes",sans-serif;
-          font-size: 16px;
-          color:$aColor;
-          border-radius: 5px;
-          border:1px solid $aColor;
-        }
-  
-        li {
-          margin-top: 16px;
-        }
-      }
     }
+
     .modal-1-footer {
-  
-      height: 20px;
-      flex:0 1 auto;
-      background: none;
-  
-      p {
-        margin: 0 16px 0 20px;
-        font-family: "TT Lakes",sans-serif;
-        font-size: 14px;
-        color:$aColor;
-  
-  
-        a {
-          color:$red;
-          cursor:pointer;
-          display: block;
-  
-          &:hover {
-            transform: scale(101%);
-            transition-duration: 0.1ms;
-          }
+        height: 20px;
+        flex:0 1 auto;
+        background: none;
+    
+        p {
+            margin: 0 16px 0 20px;
+            font-family: "TT Lakes",sans-serif;
+            font-size: 14px;
+            color:$aColor;
+    
+    
+            a {
+                color:$red;
+                cursor:pointer;
+                display: block;
+        
+                &:hover {
+                    transform: scale(101%);
+                    transition-duration: 0.1ms;
+                }
+            }
         }
-      }
-  
-      .btn-send {
-        width: 136px;
-        height:32px;
-        background: url("../img/send.svg") no-repeat;
-        border: none;
-        margin: 10px 10px 0 170px;
-        cursor: pointer;
-        border-radius: 30px;
-  
-        &:hover {
-          cursor: pointer;
-          transition-duration:0.6s;
-          box-shadow: 0 0 0.75rem $crimson;
+    
+        .btn-send {
+            width: 136px;
+            height:32px;
+            background: url("../img/send.svg") no-repeat;
+            border: none;
+            margin: 10px 10px 0 170px;
+            cursor: pointer;
+            border-radius: 30px;
+    
+            &:hover {
+                cursor: pointer;
+                transition-duration:0.6s;
+                box-shadow: 0 0 0.75rem $crimson;
+            }
+    
+            @media (min-width: 1440px) {
+                margin: 10px 10px 0 270px;
+            }
+    
+            @media (min-width: 320px) {
+                position: absolute;
+                margin-right: 0;
+                right:20px;
+            }
         }
-  
-        @media (min-width: 1440px) {
-          margin: 10px 10px 0 270px;
-        }
-  
-        @media (min-width: 320px) {
-          position: absolute;
-          margin-right: 0;
-          right:20px;
-        }
-      }
-  
+    
     }
 }
   
+
+.modal-in-place {
+    transform: translateX(0);
+    transition-duration: 0.5s;
+}
+
+.modal-hide {
+    transform: translateX(1000px);
+    transition-duration: 0.9s;
+}

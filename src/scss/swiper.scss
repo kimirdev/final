@@ -282,7 +282,7 @@
     z-index: 2;
   
     @media (min-width:768px) {
-      display:none;
+        display:none;
     }
 }
   
@@ -299,15 +299,15 @@
     position: relative;
   
     .swiper-slide {
-      box-sizing: border-box;
-      max-width: 260px;
-      height: 200px;
-      border: 1px solid #EAEAEA;
-      border-radius: 5px;
-      margin: 16px 0 16px 16px;
-      background-color: white;
-      z-index: 1;
-      padding: 16px;
+        box-sizing: border-box;
+        max-width: 260px;
+        height: 200px;
+        border: 1px solid #EAEAEA;
+        border-radius: 5px;
+        margin: 16px 0 16px 16px;
+        background-color: white;
+        z-index: 1;
+        padding: 16px;
     }
   
     .btn-order {
@@ -323,41 +323,40 @@
     }
 
     .swiper-pagination {
-      transform:translateY(5px) scale(1.5);
+        transform:translateY(5px) scale(1.5);
     }
   
     .info-button {
-      width: 226px;
-      height: 160px;
-  
+        width: 226px;
+        height: 160px;
     }
   
     .info-button p {
-      margin:0;
-      font-family: TT Lakes, serif;
-      font-size: 14px;
-      font-weight: 300;
+        margin:0;
+        font-family: TT Lakes, serif;
+        font-size: 14px;
+        font-weight: 300;
     }
   
     .info-button p:nth-child(1), p:nth-child(3), p:nth-child(5) {
-      color: $greyText;
+        color: $greyText;
     }
   
     .info-button p:nth-child(1) {
-      margin-top: -10px;
+        margin-top: -10px;
     }
   
     .info-button p:nth-child(2), p:nth-child(4), p:nth-child(6)  {
-      margin-top: 5px;
+        margin-top: 5px;
     }
   
     .info-button p:nth-child(3), p:nth-child(5) {
-      margin-top: 10px;
+        margin-top: 10px;
     }
   
   
     @media (min-width: 768px) {
-      display: none;
+        display: none;
     }
   
   }
@@ -385,85 +384,84 @@
     background-color: #bbbbbb;
 }
 
-.price-for-service {
-  position: relative;
-  @media (min-width: 320px) {
-    display: none;
-  }
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    min-width: 740px;
-    background-color: $mainBackground;
-    justify-content: center;
-
-    .table {
-      padding: 0 16px 0 16px;
-      margin: 0 16px 0 16px;
-      border-radius: 5px;
-      background-color: white;
+.pricelist {
+    position: relative;
+    @media (min-width: 320px) {
+        display: none;
     }
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        min-width: 740px;
+        background-color: $mainBackground;
+        justify-content: center;
 
-    .first-line {
-      min-width: 688px;
-      height: 65px;
+        .table {
+            padding: 0 16px 0 16px;
+            margin: 0 16px 0 16px;
+            border-radius: 5px;
+            background-color: white;
+        }
 
-      display: grid;
-      grid-template-columns: 53% 13% 15%;
-      background-color: $mainBackground;
-      align-items: center;
+        &__titles {
+            min-width: 688px;
+            height: 65px;
+
+            display: grid;
+            grid-template-columns: 53% 13% 15%;
+            background-color: $mainBackground;
+            align-items: center;
+        }
+
+        &__titles:nth-child(1) {
+            margin-left: 32px;
+        }
+
+        &__titles p:nth-child(2) {
+            margin:0 0 0 3px;
+        }
+
+        p {
+            display: block;
+            width: 100%;
+            font-family: "TT Lakes", sans-serif;
+            font-size: 14px;
+            color: $aColor;
+        }
+
+        &__titles p:nth-child(1) {
+            margin-left: 16px;
+        }
+
+        &__element {
+            border-bottom: 1px solid $divider;
+            min-width: 688px;
+            height: 65px;
+            display: grid;
+            justify-content: initial;
+            grid-template-columns: 55% 13% 15%;
+            background-color: white;
+            align-items: center;
+        }
+
+        &__element p:nth-child(1) {
+            margin-left: 16px;
+        }
+
+        .btn-order {
+            display: block;
+            position: absolute;
+            background: url("../img/order.svg") no-repeat white;
+            width: 119px;
+            height: 32px;
+            right: 40px;
+            cursor: pointer;
+            border:none;
+            border-radius: 30px;
+        }
+        & .second-line:last-child {
+            border-bottom: none;
+        }
     }
-
-    .first-line:nth-child(1) {
-      margin-left: 32px;
-    }
-
-    .first-line p:nth-child(2) {
-      margin:0 0 0 3px;
-    }
-
-    p {
-      display: block;
-      width: 100%;
-      font-family: "TT Lakes", sans-serif;
-      font-size: 14px;
-      color: $aColor;
-    }
-
-    .first-line p:nth-child(1) {
-      margin-left: 16px;
-    }
-
-    .second-line {
-      border-bottom: 1px solid $divider;
-      min-width: 688px;
-      height: 65px;
-      display: grid;
-      justify-content: initial;
-      grid-template-columns: 55% 13% 15%;
-      background-color: white;
-      align-items: center;
-    }
-
-    .second-line p:nth-child(1) {
-      margin-left: 16px;
-    }
-
-    .btn-order {
-        display: block;
-        position: absolute;
-        background: url("../img/order.svg") no-repeat white;
-        width: 119px;
-        height: 32px;
-        right: 40px;
-        cursor: pointer;
-        border:none;
-        border-radius: 30px;
-    }
-    & .second-line:last-child {
-      border-bottom: none;
-    }
-
-  }
 }
 
